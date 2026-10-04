@@ -1,0 +1,78 @@
+.formulario-card {
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+  border: 1px solid #E8EEF6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form-grupo-titulo {
+  font-size: 1.125rem;
+  color: #041E42;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #E8EEF6;
+}
+
+.form-linha {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-campo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #344054;
+}
+
+.form-input, .form-select, .form-textarea {
+  padding: 0.75rem;
+  border: 1px solid #D7E2EF;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.875rem;
+  color: #344054;
+}
+
+.form-input:focus, .form-select:focus, .form-textarea:focus {
+  border-color: #2098D4;
+  outline: none;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-acoes {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.form-ajuda-resolvido {
+  margin: 0.15rem 0 0;
+
+  font-size: 0.78rem;
+  line-height: 1.4;
+
+  color: #667085;
+}
+
+@media (max-width: 768px) {
+  .form-linha {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
