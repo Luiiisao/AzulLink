@@ -98,7 +98,23 @@ export default function NovaOcorrencia() {
                Use esta opção para ocorrências já solucionadas que precisam apenas ser registradas.
                </p>
           )}
-        </div>
+          </div>
+          <div className="form-campo">
+            <label className="form-label" htmlFor="impacto">
+            Impacto estimado
+            </label>
+
+            <input
+            required
+            id="impacto"
+            type="text"
+            name="impacto"
+            className="form-input"
+            placeholder="Ex: 25 minutos"
+            value={dados.impacto}
+            onChange={handleChange}
+            />
+          </div>
         </div>
 
         <div className="form-campo">
